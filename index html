@@ -55,5 +55,117 @@
       align-items: center;
       justify-content: center;
       color: white;
-      text-shadow: 2px 2px 5px rg
+      text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+      text-align: center;
+    }
 
+    .hero h1 {
+      font-size: 3rem;
+    }
+
+    .section {
+      padding: 2rem 0;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .card {
+      background: white;
+      border-radius: 5px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+    }
+
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .card-body {
+      padding: 1rem;
+    }
+
+    .card-body h3 {
+      margin-bottom: 0.5rem;
+    }
+
+    footer {
+      background: #222;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <h1 style="text-align:center;">PhoneZone</h1>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Phones</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h1>Find Your Next Smartphone</h1>
+    </div>
+  </section>
+
+  <section class="section container">
+    <h2>Featured Phones</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9" alt="Phone 1">
+        <div class="card-body">
+          <h3>iPhone 15 Pro</h3>
+          <p>Experience the power of the latest A17 chip and dynamic island display.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1603791440384-56cd371ee9a7" alt="Phone 2">
+        <div class="card-body">
+          <h3>Samsung Galaxy S24</h3>
+          <p>Edge-to-edge AMOLED screen with revolutionary AI-powered camera.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1580910051140-dbe41aa1c0f6" alt="Phone 3">
+        <div class="card-body">
+          <h3>Google Pixel 9</h3>
+          <p>Pure Android experience and the smartest mobile photography yet.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section container">
+    <h2>About PhoneZone</h2>
+    <p>PhoneZone is your trusted source for the latest in mobile technology. From detailed reviews to expert comparisons, we help you stay informed and choose the right smartphone for your needs and budget.</p>
+  </section>
+
+  <section class="section container">
+    <h2>Contact Us</h2>
+    <p>Email: support@phonezone.com</p>
+    <p>Phone: +1 (555) 987-6543</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 PhoneZone. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
